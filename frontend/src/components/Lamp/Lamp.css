@@ -1,0 +1,50 @@
+.lamp {
+    width: 33%;
+    min-width: 24rem;
+    max-width: 34rem;
+    background-color: #102949;
+    border-radius: 0.3rem;
+    color: #dbdfe3;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 2fr 5fr auto;
+    gap: 1rem;
+}
+
+.lamp__lamp-group-name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 0.5rem;
+    font-size: clamp(0.8rem, 0.1rem + 1.125vw, 1rem);
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    text-align: center;
+    font-weight: bolder;
+}
+.lamp-power-progress {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+.lamp-power {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+}
+.lamp-battery {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+.lamp__mode-controls {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+.lamp__mode-controls > * {
+    margin-bottom: 7%;
+}
+.lamp__mode-controls > *:last-child {
+    margin-bottom: 4%;
+}

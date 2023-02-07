@@ -1,0 +1,12 @@
+.lamp-mode {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lamp-mode__error {
+    color: rgb(178, 31, 31);
+}
+
+.lamp-mode p {
+    font-size: clamp(0.7rem, 0.1rem + 1.125vw, 1rem);
+}
